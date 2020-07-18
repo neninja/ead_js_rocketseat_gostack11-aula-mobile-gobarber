@@ -31,7 +31,7 @@ export interface Provider {
 }
 
 const Dashboard: React.FC = () => {
-  const [providers, setProiders] = useState([]);
+  const [providers, setProiders] = useState<Provider[]>([]);
 
   const { signOut, user } = useAuth();
   const { navigate } = useNavigation();
